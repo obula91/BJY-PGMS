@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fileExtension</title>
+</head>
+<body>
+	<h2>FileExtension</h2>
+<p id="extension"></p>
+<script type="text/javascript">
+	function getFileExtension(filename){
+    const extension = filename.substring(filename.lastIndexOf('.') + 1, filename.length);
+    return extension;
+}
+let result=getFileExtension('h.txt');
+document.getElementById("extension").innerHTML=
+result;
+
+console.log(result);
+
+</script>
+</body>
+</html>

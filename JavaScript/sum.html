@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<label>1st number:</label>
+	<input type="text" id="numone"><br>
+	<label>2nd number:</label>
+	<input type="text" id="numtwo"><br>
+
+	<input type="button" value="click" onclick="my()">
+	<div id="res"></div>
+	<script type="text/javascript">
+		
+		function my() {
+  var x = parseInt(document.getElementById("numone").value);
+  var y=parseInt(document.getElementById("numtwo").value);
+  var result=x+y;
+  if(x==y){
+  	 result=3*(x+y);
+  }
+  else{
+result=(x+y);
+  }
+  document.getElementById("res").innerHTML=result;
+}
+	</script>
+</body>
+</html>
