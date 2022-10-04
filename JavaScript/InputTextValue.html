@@ -6,20 +6,31 @@
 	<title>value</title>
 </head>
 <body>
+
 	<h2>The diffrence of a given number and 13</h2>
-<p id="value"></p>
+	<body>
+<label>1st number:</label>
+	<input type="text" id="numone"><br>
+	<input type="button" value="click" onclick="difference()">
+	<div id="res"></div>
 <script type="text/javascript">
-	function difference(n)
+	function difference()
  {
-    if (n <= 13)
-        return 13 - n;
-    else
-        return (n - 13) * 2;
+    
+    var n =parseInt( document.getElementById("numone").value);
+    var y=0;
+    if (n <= 13){
+        y=13 - n;
+    }
+    else{
+        y=(n - 13)* 2;
+    }
+
+    document.getElementById("res").innerHTML="The Value: "+
+y;
  }
-console.log(difference(32));
-let values=difference(32);
-document.getElementById("value").innerHTML=
-values;
+
+
 
 </script>
 </body>

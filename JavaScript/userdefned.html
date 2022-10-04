@@ -8,15 +8,20 @@
 <body>
 
 <h2>user defind variables</h2>
-<p id="user"></p>
 
+<label>FirstName</label>
+<input type="text" name="" id="name">
+<input type="button" value="submit" onclick="getName()">
+<div id="user"></div>
 <script>
+function getName() {
+	
+var firstName = document.getElementById("name").value;
 
-let firstName = "Obula";
-let SecondName = "Reddy";
 
 document.getElementById("user").innerHTML =
-firstName + "<br>" + SecondName ;
+"UserEntered FirstName Is: "+firstName;
+}
 </script>
 </body>
 </html>

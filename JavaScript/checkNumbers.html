@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>check two given numbers and return true if one of the number is 50 or if their sum is 50.</h2>
+
+<label>1st number:</label>
+	<input type="text" id="numone"><br>
+	<label>2nd number:</label>
+	<input type="text" id="numtwo"><br>
+
+	<input type="button" value="click" onclick="my()">
+	<div id="res"></div>
+<script type="text/javascript">
+	function my() {
+    let number1 = parseInt(document.getElementById("numone").value);
+    let number2 = parseInt(document.getElementById("numtwo").value);
+    let sum = number1 + number2;
+    let flag = false;
+
+    if (sum == 50 || number1 == 50 || number2 == 50)
+        flag = true;
+
+   document.getElementById("res").innerHTML="the value is : "+
+   flag;
+}
+</script>
+
+</body>
+</html>
