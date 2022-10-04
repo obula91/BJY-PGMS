@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>check a given integer is within 20 of 100 or 400.</h2>
+
+	<label>1st number:</label>
+	<input type="text" id="numone"><br>
+	<input type="button" value="click" onclick="my()">
+	<div id="res"></div>
+
+	<script type="text/javascript">
+		function my(){
+		var x = parseInt(document.getElementById("numone").value);
+		let y=0;
+		function testhundred(x) {
+   y=x ((Math.abs(100 - x) <= 20) ||
+	 (Math.abs(400 - x) <= 20));
+  document.getElementById("res").innerHTML=
+  "the given integer withing :"+y;
+}
+}
+	</script>
+
+</body>
+</html>
